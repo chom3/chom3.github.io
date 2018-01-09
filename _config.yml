@@ -1,5 +1,5 @@
 # Site
-title:              Massively
+title:              Corey Hom
 bio:                'Jekyll version of the Massively theme by HTML5UP'
 description:        "Jekyll version of the Massively theme by HTML5UP"
 locale:             en_US
@@ -16,7 +16,7 @@ defaults:
     author:
 
 # Jekyll
-permalink:          /blog/:title/
+permalink:          /:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -35,13 +35,13 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+bitbucket:          chom3
+github:             chom3
+instagram:          homcorey
+linkedin:           coreyhom
 
 # personal
-location:           Los Angeles, CA
+location:           New York, NY
 phone:              310-318-5555
 email:              info@default.com
 
@@ -61,3 +61,6 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+
+# Include list
+inclue: ["_pages"]
