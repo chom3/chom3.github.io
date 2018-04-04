@@ -3,6 +3,96 @@ permalink: "/travel/"
 ---
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  * {
+      box-sizing: border-box;
+  }
+  
+  body {
+      margin: 0;
+      font-family: Arial;
+  }
+  
+  .header {
+      text-align: center;
+      padding: 32px;
+  }
+  
+  .row {
+      display: -ms-flexbox; /* IE 10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE 10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+  }
+  
+  /* Create 4 equal columns that sits next to each other */
+  .column {
+      -ms-flex: 25%; /* IE 10 */
+      flex: 25%;
+      padding: 0 4px;
+  }
+  
+  .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+  }
+  
+  /* Style the buttons */
+  .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  
+  .btn:hover {
+      background-color: #ddd;
+  }
+  
+  .btn.active {
+      background-color: #666;
+      color: white;
+  }
+  /*HOVER IMAGE TEXT*/
+  .imgContainer {
+      -ms-flex: 25%; /* IE 10 */
+      flex: 25%;
+      padding: 0 4px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: white;
+  }
+  
+  .imgContainer:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+</style>
   {% include head.html %}
   <body>
   <section id="travel" class="links bg-primary">
@@ -30,9 +120,78 @@ permalink: "/travel/"
         <i class="fa fa-beer fa-stack-1x text-primary"></i>
       </span>
     </a>
+    <div class="container">
+      <div class="row text-left">
+        <h1>I'm starting to travel more!</h1>
+        <h2>I go around the US but I've been to places such as London, Portugal, and Spain!</h2>
+      </div>
+    </div>
+
   </section>
   
+  <div class="head" id="myHeader">
+    <h1>Photos!</h1>
+    <p>Click on the buttons to change the grid view.</p>
+    <button class="btn" onclick="two()">2</button>
+    <button class="btn active" onclick="four()">4</button>
+  </div>
+  <div class="row">
+    <div class="column">
+        <img src="/img/barc-min.jpg" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="/img/porto2-min.jpg" style="width:100%">
+        <div class="top-left">Top Left</div>
+
+    </div>
+    <div class="column">
+        <img src="/img/storm-min.jpg" style="width:100%">
+        <div class="top-left">Top Left</div>
+
+    </div>
+    <div class="column">
+        <img src="/img/lon.jpg" style="width:100%">
+        <div class="top-left">Top Left</div>
+
+    </div>
+  </div>
+</div>
+
   {% include footer.html %}
+
+  <script>
+  // Get the elements with class="column"
+  var elements = document.getElementsByClassName("column");
+  
+  // Declare a "loop" variable
+  var i;
+  
+  // Two images side by side
+  function two() {
+      for (i = 0; i < elements.length; i++) {
+          elements[i].style.msFlex = "50%";  // IE10
+          elements[i].style.flex = "50%";
+      }
+  }
+  
+  // Four images side by side
+  function four() {
+      for (i = 0; i < elements.length; i++) {
+          elements[i].style.flex = "25%"; 
+      }
+  }
+  
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myHeader");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
   </body>
 
 </html>
