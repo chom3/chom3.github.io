@@ -1,5 +1,5 @@
-Portfolio Website
+#Personal Website
 
-jekyll serve --host $IP --port $PORT --baseurl ''
-
+#To run locally
+Set up github pages
 bundle exec jekyll serve

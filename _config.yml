@@ -1,24 +1,75 @@
-# Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
-include: ['_pages']
-root: /
-# User setting
-owner: Corey Hom
-email: hom.corey@gmail.com
-facebook_username: corey.hom
-instagram_username: homcorey
-github_username: chom3
-linkedin_username: coreyhom
+# Site
+title:              Hi, I'm Corey!
+bio:                "I'm currently a software engineer at Microsoft aiming to share my thoughts and life experiences on the web. "
+description:        "Studied CS, loves fitness, games, and connecting with others."
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_US
+url:                http://localhost:4000
 
-# API settings
-google_api_key:
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
-# Build settings
-markdown: kramdown
+# Comments
+#disqus_shortname:   taylantatli
+
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+#email:
+#twitter:            username
+facebook:           corey.hom
+github-url:         chom3
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+linkedin:           coreyhom
+#xing:              username
+instagram:          homcorey
+#lastfm:            username
+#tumblr:            username
+#medium:            '@username'
+#pinterest:         username
+#foursquare:        username
+#dribbble:          username
+#youtube:           username
+#youtube-channel:   channel
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
