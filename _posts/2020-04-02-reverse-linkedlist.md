@@ -9,8 +9,6 @@ tag:
 - algorithm
 comments: true
 ---
-
-
 # The problem:
 
 Given a singly linked list, reverse it.
