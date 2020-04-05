@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Reverse a LinkedList"
-date:   2020-03-01
+date:   2020-04-05
 excerpt: "Understanding how to reverse a singly linkedlist."
 algorithm: true
 tag:
