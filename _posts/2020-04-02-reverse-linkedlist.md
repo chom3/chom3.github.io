@@ -86,7 +86,7 @@ and so on.
 
 ...
 
-By the time we get ot the end, start will be null because we iterated all the way to the end.
+By the time we get to the end, start will be null because we iterated all the way to the end.
 
 Our previous ListNode which has been holding the values for us will be our starting point so we'll need to return that instead.
 ~~~
