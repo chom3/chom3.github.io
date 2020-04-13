@@ -12,6 +12,23 @@ comments: true
 # The problem:
 Given a linked list, determine if it has a cycle in it.
 
+~~~
+Given:
+
+ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int val){
+        this.val = val;
+    }
+}
+
+1->2->3
+   ^--v
+ 
+ Should be a cycle because after node with value 3, you'll go back to node with value 2.
+~~~
 # Importance
 Opening your mind to the slow/fast (Tortoise and the Hare) method is a great approach to solving many different problems.
 
