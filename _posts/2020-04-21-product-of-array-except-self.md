@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Find the product of each array's indice except for that indice"
-date:   2020-04-05
+date:   2020-04-21
 excerpt: "Finding the product in a constant time and space!"
 algorithm: true
 tag:
