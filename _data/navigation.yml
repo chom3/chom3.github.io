@@ -1,6 +1,8 @@
 # Site navigation links
 
-- title: Projects
-  url: /projects/
+# - title: Projects
+#   url: /projects/
 - title: Algorithms
   url: /algorithm/
+- title: Resume
+  url: /resume/

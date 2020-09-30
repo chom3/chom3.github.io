@@ -7,7 +7,7 @@ comments: false
 ---
 
 <img src="https://user-images.githubusercontent.com/7410287/75633425-764c2300-5bb9-11ea-9af4-c55ed85ec96b.jpg" style="width:35%;height:35%;">
-<center>Hello! I'm a software engineer at Microsoft. My hobbies include working out, reading, working on projects (like this website), and just trying to prepare myself for life.</center>
+<center>Hello! I'm a software engineer at Microsoft. My hobbies include working out, reading, working on projects (like this website), and just trying to live my best life.</center>
 
 ## Goals
 * Getting better at my job

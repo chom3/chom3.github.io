@@ -1,6 +1,6 @@
 # Site
 title:              Corey
-bio:                "I'm currently a software engineer at Microsoft aiming to share my thoughts and life experiences on the web. "
+bio:                "Born and raised in NYC. Software engineer currently at Microsoft. "
 description:        "Studied CS, loves fitness, games, and connecting with others."
 reading_time:       true
 words_per_minute:   200
@@ -38,7 +38,7 @@ sass:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email:              hom.corey@gmail.com
 #twitter:            username
 facebook:           corey.hom
 github-url:         chom3
