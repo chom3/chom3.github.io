@@ -3,14 +3,15 @@
 		<ul class="dl-menu">
 			<li><a href="{{ site.url }}/">Home</a></li>
 			<li>
-				<a href="#">Me</a>
+				<a href="#">About Me</a>
 				<ul class="dl-submenu">
 					<li>
 						<img src="{{ site.url }}/{{ site.logo }}" alt="{{ site.title }} photo" class="author-photo">
 						<h4>{{ site.title }}</h4>
 						<p>{{ site.description }}</p>
 					</li>
-                    <li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+                    <li><a href="{{ site.url }}/about/"><i class="fa fa-fw fa-at"></i>About Me</a></li>
+                    <li><a href="{{ site.url }}/photos/"><i class="fa fa-fw fa-camera"></i>Places I've Been</a></li>
 					{% if site.email %}<li>
                         <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
                     </li>{% endif %}
@@ -101,6 +102,5 @@
             <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>            
             {% endfor %}
           
-          <li><a href="http://jekyllthemes.org/themes/moon/">Check out the Theme!</a></li>
 		</ul><!-- /.dl-menu -->
 	</nav><!-- /.dl-menuwrapper -->

@@ -13,7 +13,7 @@ comments: false
 
 #### Microsoft | Seattle, WA
 
-##### Visual Studio Performance | Software Engineer | Nov. 2019 – Present
+##### Visual Studio Performance | Software Engineer | Nov. 2019 – Feb. 2021
   
   *  Primarily focused on facilitating the developer experience on Microsoft Visual Studio
 
