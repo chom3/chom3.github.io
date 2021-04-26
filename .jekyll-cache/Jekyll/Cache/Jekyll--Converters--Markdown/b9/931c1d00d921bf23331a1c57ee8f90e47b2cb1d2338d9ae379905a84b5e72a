@@ -1,0 +1,143 @@
+I"�<p>This will be updated periodically!</p>
+
+<p>The Software Engineer interview is a tough and long process comprised of preparation and luck.</p>
+
+<p>I’ll share my experience with how the standard interview process has been and things that companies look for in the interview process.</p>
+
+<p>Remember that the interview process is as much as interviewing the company as it is about interviewing you!</p>
+
+<p>Learn to identify possible red flags and withdraw from processes if it doesn’t make sense to you.</p>
+
+<h2 id="preparing-for-the-application-process">Preparing for the Application Process</h2>
+
+<p>Make an Excel document or Google Sheet about your interview process.</p>
+
+<p>At the top I’d write your reasons for leaving your current role (if any), what you are looking to keep in your next role from your previous role (if any), and new things you are seeking in your new role.</p>
+
+<p>For example, I’ve had that I wanted to leave because the work life balance was poor, so I was looking for a better opportunity in that, but I also wanted to look for a team that I got along with, because I had that in my previous role.</p>
+
+<p>Next I’d make some columns:</p>
+<ul>
+  <li>The company you applied to</li>
+  <li>The date you applied</li>
+  <li>The response</li>
+  <li>The recruiter, people you have worked with throughout this process</li>
+  <li>What part of the process you got up to</li>
+  <li>Key Info/Glassdoor impressions</li>
+  <li>The interview questions asked</li>
+  <li>Any other notes</li>
+</ul>
+
+<p>This helps you remember where you might have come up short in a previous interview, names that may come up throughout the interview process, and general information about the company that you may want to have on hand.</p>
+
+<h2 id="the-resume">The Resume</h2>
+
+<p>The resume should fit the position. Highlight your experiences, what frameworks and technologies you’re familiar with, past projects and experience, to try to address how you are a good fit for the opening.</p>
+
+<p>Check over for grammatical errors.</p>
+
+<p>Make sure your bullet points make sense and that you can explain it (can you explain what “created an API to interface with the customer” means?).</p>
+
+<h2 id="the-initial-screening">The Initial Screening</h2>
+
+<p>The recruiter should pass on your resume to a team, where the team will discuss if you’re a right fit for the position based off your initial screening and resume.</p>
+
+<p>The initial screening may ask you questions like: what you’re looking for in your next position, what you’re currently doing, sponsorship (if needed), salary expectations, and more.</p>
+
+<p>This is your chance to ask the interviewee for generic questions about the company, how large the team is, how many teams, possibility of transferring teams, how you might be assigned, and ongoing projects.</p>
+
+<h2 id="the-first-round">The First Round</h2>
+
+<p>If the initial screening makes sense for both parties, the first round interview should come up.</p>
+
+<p>The round mostly consists of:</p>
+
+<p>Talking about what you’re doing in your current role, what you have experience with, and what you’re looking for in your next role again.</p>
+
+<p>A potential pop quiz of software fundamentals (I call it trivia).</p>
+
+<p>What’s…</p>
+
+<ul>
+  <li>An interface?</li>
+  <li>An abstract class?</li>
+  <li>Inheritance?</li>
+  <li>Pass by reference? Pass by value?</li>
+  <li>Garbage collection? How does it work? What are different ways that garbage collection is done?</li>
+</ul>
+
+<p>I encourage you to look these up and to write them up and give them a read.</p>
+
+<p>A 30-45 minute data structure/algorithm question.</p>
+
+<p>When practicing on something like leetcode, it’s important to understand the pattern or solution. You can sometimes get a similar quesiton but different parameters and understanding how to solve a problem will help you make adjustments.</p>
+
+<p>Here the interviewer ideally looks for an acceptable answer, but there are times when you can get by as long as you:</p>
+
+<ul>
+  <li>Provide a logical thought process</li>
+  <li>Give a solution</li>
+  <li>Highlight maybe a better way that you could have done it (if your solution isn’t the best)</li>
+  <li>Provide clean, modular, concise code</li>
+</ul>
+
+<p>Reasons to not move on the next round:</p>
+<ul>
+  <li>You didn’t provide an optimal solution (unfortunately some interviewers don’t care about other metrics except the answer)</li>
+  <li>You couldn’t articulate your solution (even if you provided one) - i.e. not saying anything but just immediate coding</li>
+  <li>You realize that you and the interviewer have some differences in what you’re looking for in your next role</li>
+  <li>You couldn’t provide a solution in general</li>
+</ul>
+
+<p>This is your time to also ask questions to the interviewer, who most likely works on or with the team you’re interviewing for.</p>
+
+<ul>
+  <li>Ask about day-to-day activities</li>
+  <li>Ask about the company in general</li>
+  <li>Ask about what the interview may like or dislike about the company</li>
+  <li>Write these questions down and practice them to remember them off hand</li>
+</ul>
+
+<h2 id="the-onsite">The Onsite</h2>
+
+<p>If you passed the first round, you’ll most likely make it to the next onsite.</p>
+
+<p>Note, sometimes a company may have a “second” round, where it’s just a repeat of the first round with another interviewer.</p>
+
+<p>The onsite consists of multiple (3-5) rounds of different topics.</p>
+
+<p>Prepare for:</p>
+<ul>
+  <li>1-2 data structure/algorithm questions</li>
+  <li>A system design question</li>
+  <li>A behavioral round</li>
+  <li>A possible discussion with the team lead, manager, to talk about best fits</li>
+</ul>
+
+<p>The data structure/algorithms are just like the first rounds.</p>
+
+<p>The system design question is usually something about “how would you design…” I would recommend purchasing/getting a copy of Grokking the System Design Interview, or starting with the <a href="https://github.com/donnemartin/system-design-primer">System Design Primer</a>.</p>
+
+<p>Remember to write down these questions and pracitce/look them up later if you don’t pass this interview. It’s the practice you need to approach future questions.</p>
+
+<p>The behavioral round is sometimes written off as “non important” but it’s important to</p>
+
+<ul>
+  <li>Ask more questions about the team and company</li>
+  <li>Show that you’re an enjoyable person to work with, that you fit on this team</li>
+  <li>Show how you would handle certain situations</li>
+</ul>
+
+<p>Rehearse possible answers, use the STAR (Situation Task Action Result) method for your answers as well.</p>
+
+<p>The day will take 3-4 hours and be incredibly exhausting. Remember to take appropriate bathroom and water breaks to reset your mentality for the next rounds.</p>
+
+<p>If you fail, don’t attribute it to being unlucky. Try to think about what went wrong so that you can get it right next time.</p>
+
+<p>Do you have trouble with backtracking, recursion, linked lists, etc.? Write down the questions and review them afterwards. Data structure and algorithm questions are usually different from day to day activities as a software engineer, this is something that needs to be studied or practiced.</p>
+
+<h2 id="the-offer">The Offer</h2>
+
+<p>Receiving an offer is incredibly exciting! Make sure you review and think it over! If there are any red flags that stick out, feel free to reach out to the recruiter to maybe set up more meetings with the manager to see if you can clarify anything. Don’t jump into anything without being prepared!</p>
+
+:ET

@@ -1,0 +1,119 @@
+I"�<h1 id="the-problem">The Problem</h1>
+<p>Given an array nums of n integers where n &gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums[i].
+*Without using division.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: [1,2,3,4]
+
+Output: [24,12,8,6]
+</code></pre></div></div>
+
+<h1 id="importance">Importance</h1>
+<p>I don’t think this is that important of an algorithm to know off the top of your head. It’s more for problem solving and being able to use constant time and space.</p>
+
+<p>Doing these questions often usually help think about optimal solutions, but I think this is a pretty unique situation.</p>
+
+<h1 id="the-thought-process">The Thought Process</h1>
+<p>In this case, we can’t use division, so we can break it down into 2 parts.</p>
+
+<p>Imagine having a new array:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>New: [1,1,1,1]
+Given: [1,2,3,4]
+</code></pre></div></div>
+<p>We need to multiply each new indice, essentially, by everything to the right and left of the same indice in the given array.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new[0] = given[1] * given[2] * given[3]
+new[1] = given[0] * given[2] * given[3]
+new[2] = given[0] * given[1] * given[3]
+new[3] = given[0] * given[1] * given[2]
+</code></pre></div></div>
+<p>So how about we set up two for loops and two arrays?</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RIGHT:
+new[0] = given[1] * given[2] * given[3]
+new[1] = given[2] * given[3]
+new[2] = given[3]
+new[3] = 1
+
+LEFT:
+new[0] = 1
+new[1] = given[0]
+new[2] = given[0] * given[1]
+new[3] = given[0] * given[1] * given[2]
+</code></pre></div></div>
+<p>One can handle all the multiplication to the left and one can handle all the multiplication to the right.</p>
+
+<p>A final array that handles the multiplication of each indice of left and right should be equal to our answer!</p>
+
+<h1 id="the-solution">The Solution</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public int[] productExceptSelf(int[] nums){
+    int[] left = new int[nums.length];
+    int[] right = new int[nums.length];
+    int[] answer = new int[nums.length];
+
+    left[0] = 1; // no elements to the left of index 0, so this should be set to 1
+    right[nums.length - 1] = 1; // same deal
+
+    for (int i = 1; i &lt; nums.length; i++){
+        left[i] = left[i-1] * nums[i-1];
+    }
+
+    for (int i = nums.length - 2; i &gt;= 0; --i){
+        right[i] = right[i+1] * nums[i+1];
+    }
+
+    for (int i = 0; i &lt; nums.length; i++){
+        answer[i] = left[i] * right[i];
+    }
+
+    return answer;
+}
+</code></pre></div></div>
+
+<h1 id="improvements">Improvements</h1>
+<p>While I think the solution should be perfectly valid, O(N) space and time complexity. You’re using arrays that are as large as the given array is and the time it takes to complete is as long as the given array is.</p>
+
+<p>We can also imagine what if we are only given an answer array and are not able to generate new arrays to help with the right/left multiplication.</p>
+
+<p>We can just iterate through our initial array going from the left (or right).</p>
+
+<p>We’ll have, in our new array, just the lefts.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LEFT:
+new[0] = 1
+new[1] = given[0]
+new[2] = given[0] * given[1]
+new[3] = given[0] * given[1] * given[2]
+</code></pre></div></div>
+<p>Now for the right:
+We can initialize a variable equal to 1.</p>
+
+<p>As we go to the next index, we can just multiply our variable by that current index and build upon it to have the same value.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RIGHT:
+new[0] = given[1] * given[2] * given[3]
+new[1] = given[2] * given[3]
+new[2] = given[3]
+new[3] = 1
+</code></pre></div></div>
+<p>this is the same as:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int r = 1;
+for (int i = nums.length - 1; i &gt;= 0; --i){
+    r *= nums[i];
+}
+</code></pre></div></div>
+<p>Then we can multiply each of the answer array’s indices by the number r to get the full product.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public int[] productExceptSelf(int[] nums){
+    int[] answer = new int[nums.length];
+
+    answer[0] = 1; // no elements to the left of index 0, so this should be set to 1
+
+    for (int i = 1; i &lt; nums.length; i++){
+        answer[i] = answer[i-1] * nums[i-1];
+    }
+
+    int r = 1;
+    for (int i = nums.length - 1; i &gt;= 0; --i){
+        answer[i] = answer[i] * R;
+        r *= nums[i];
+    }
+
+    return answer;
+}
+</code></pre></div></div>
+:ET

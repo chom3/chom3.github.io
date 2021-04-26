@@ -1,0 +1,38 @@
+I"�<h1 id="the-problem">The problem:</h1>
+<p>Given a node, remove it from the linked list.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+public class ListNode{
+    int val;
+    ListNode next;
+    ListNode(int x){
+        val = x;
+    }
+}
+
+1-&gt;2-&gt;3
+
+Given node with value 2
+
+Output:
+
+1 -&gt; 3
+</code></pre></div></div>
+
+<h1 id="importance">Importance</h1>
+<p>Knowing this off the top of my head was huge for designing a least recently used cache. I was able to do a delete this node and create a new node to place at the top fairly easily by having this in mind.</p>
+
+<p>It’s a relatively simple question with a simple solution, so having the instant solution for this in your back pocket will help you not waste time during any interview questions.</p>
+
+<h1 id="the-thought-process">The Thought Process</h1>
+<p>You can be a little hacky and not totally delete, but replace this node’s value with the next value, and skip over the next node.</p>
+
+<p>You’ve effectively written over your current node with the next node and changed the pointer to next to the node after.</p>
+
+<h1 id="the-solution">The Solution</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public void deleteNode(ListNode node){
+    node.val = node.next.val;
+    node.next = node.next.next;
+}
+</code></pre></div></div>
+:ET

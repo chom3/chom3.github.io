@@ -1,0 +1,125 @@
+I"S<hr />
+
+<h3 id="experience">Experience</h3>
+
+<hr />
+
+<h4 id="zocdoc--new-york-ny">Zocdoc | New York, NY</h4>
+
+<h5 id="provider-growth--senior-software-engineer--march-2021---present">Provider Growth | Senior Software Engineer | March 2021 - Present</h5>
+
+<ul>
+  <li>
+    <p>Primarily focused on implementing full stack solutions to increase the number of providers and practices on Zocdoc</p>
+  </li>
+  <li>
+    <p>Creating new features integrated with website submissions to create lead objects in Salesforce</p>
+  </li>
+  <li>
+    <p>Designing different APIs in backend services to clean and post data to a main SQL database</p>
+  </li>
+  <li>
+    <p>Refactoring old legacy architectures to facilitate a smooth user experience</p>
+  </li>
+</ul>
+
+<h4 id="microsoft--seattle-wa">Microsoft | Seattle, WA</h4>
+
+<h5 id="visual-studio-performance--software-engineer-ii--nov-2019--march-2021">Visual Studio Performance | Software Engineer II | Nov. 2019 – March 2021</h5>
+
+<ul>
+  <li>
+    <p>Primarily focused on facilitating the developer experience on Microsoft Visual Studio</p>
+  </li>
+  <li>
+    <p>Automating the pull request checks and reviews and release flow to improve the Visual Studio deployment speed</p>
+  </li>
+  <li>
+    <p>Designing different APIs to accommodate any new tools or changes regarding Visual Studio testing</p>
+  </li>
+  <li>
+    <p>Improving unit testing to ensure performance of Visual Studio is acceptable for customer releases and updates</p>
+  </li>
+  <li>
+    <p>Collaborating to develop different analysis tools to compare different versions of Visual Studio</p>
+  </li>
+  <li>
+    <p>Designing and creating Windows images to be optimal for Visual Studio performance runs</p>
+  </li>
+  <li>
+    <p>Create and integrate APIs in web and application development to analyze performance data for all developers</p>
+  </li>
+</ul>
+
+<h5 id="platform-services--software-engineer--sept-2018--nov-2019">Platform Services | Software Engineer | Sept. 2018 – Nov. 2019</h5>
+
+<ul>
+  <li>
+    <p>Developed several web services for consumer service lines such as finance, supply chain management, and commerce</p>
+  </li>
+  <li>
+    <p>Developed new telemetry service on our existing platform for pipeline clarity using .NET Core framework</p>
+  </li>
+  <li>
+    <p>Provided live site and production support to ensure a reliable service with consistent uptime</p>
+  </li>
+  <li>
+    <p>Developed in an agile environment and maintain daily meetings with several consumer teams</p>
+  </li>
+  <li>
+    <p>End to end experience of creating a CI/CD pipeline for automated software delivery</p>
+  </li>
+</ul>
+
+<h4 id="deutsche-bank--manhattan-ny">Deutsche Bank | Manhattan, NY</h4>
+<h5 id="software-developer--july-2016--june-2018">Software Developer | July 2016 – June 2018</h5>
+
+<ul>
+  <li>
+    <p>Responsible for maintaining a market data trading service application focused on equities using Kdb+ framework</p>
+  </li>
+  <li>
+    <p>Developed market data feed handler that imports, caches, permanently stores, and queries data on a 24/7 basis</p>
+  </li>
+  <li>
+    <p>Exposure to script writing to automate data backfilling and transfer of global data</p>
+  </li>
+  <li>
+    <p>Held daily meetings with clients and users to test and support the data being provided</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="skills">Skills</h3>
+
+<hr />
+
+<ul>
+  <li>Languages
+    <ul>
+      <li>C#, Java, C++, JavaScript, SQL, Ruby, Python, PowerShell scripting</li>
+    </ul>
+  </li>
+  <li>Frameworks
+    <ul>
+      <li>ASP.NET, .NET Core, React</li>
+    </ul>
+  </li>
+  <li>Familiar with
+    <ul>
+      <li>GIT, JIRA, Bitbucket, GitHub, Android Studio, Oracle SQL Developer, Microsoft Azure and tools, Visual Studio, Visual Studio Code</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="education">Education</h3>
+
+<hr />
+<dl>
+  <dt>2012-2016</dt>
+  <dd><strong>BSc in Computer Science</strong>; Binghamton University, NY</dd>
+</dl>
+:ET

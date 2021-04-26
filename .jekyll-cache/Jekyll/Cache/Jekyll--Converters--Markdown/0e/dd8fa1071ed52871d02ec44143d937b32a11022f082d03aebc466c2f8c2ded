@@ -1,0 +1,74 @@
+I"�	<h1 id="the-problem">The problem:</h1>
+<p>Given a linked list, determine if it has a cycle in it.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given:
+
+ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int val){
+        this.val = val;
+    }
+}
+
+1-&gt;2-&gt;3
+   ^--v
+ 
+ Should be a cycle because after node with value 3, you'll go back to node with value 2.
+</code></pre></div></div>
+<h1 id="importance">Importance</h1>
+<p>Opening your mind to the slow/fast (Tortoise and the Hare) method is a great approach to solving many different problems.</p>
+
+<p>You might be asked to find a cycle in a tree, determine if it is a tree, etc.</p>
+
+<h1 id="the-thought-process">The Thought Process</h1>
+
+<p>The key is to use two pointers at the start of the list. One goes forward one node, the other two nodes.</p>
+
+<p>If there is a cycle, both pointers will eventually be equal.</p>
+
+<p>If not, then you will eventually hit the null end.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 -&gt; 2 -&gt; 3
+     ^----v
+</code></pre></div></div>
+<p>Both pointers start at 1.</p>
+
+<p>Turtle -&gt; 1 -&gt; 2 -&gt; 3</p>
+
+<p>Hare -&gt; 1 -&gt; 3 -&gt; 3</p>
+
+<p>1 -&gt; 2-&gt; 3</p>
+
+<p>Turtle -&gt; 1 -&gt; 2 -&gt; 3 -&gt; NULL</p>
+
+<p>Hare -&gt; 1 -&gt; 3 -&gt; NULL</p>
+
+<p>Since our hare pointer is going to be going two at a time, it should check if it’s currently null or it’s next value will be null.</p>
+
+<p>We have to remember to be careful of not letting the pointers going two at a time to be caught looking for the next value of an already null object!</p>
+
+<h1 id="the-solution">The Solution</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    public boolean hasCycle(ListNode head) {
+        //Some basic check for the extreme cases. 
+        //Everything is null? No cycle.
+        //There is no next value after the starting node? No cycle.
+        if (head == null || head.next == null){
+            return false;
+        }
+        
+        ListNode turtle = head;
+        ListNode hare = head;
+        
+        while (hare != null &amp;&amp; hare.next != null){
+            turtle = turtle.next;
+            hare = hare.next.next;
+            if (turtle == hare){
+                return true;
+            }
+        }
+        
+        return false;
+    }
+</code></pre></div></div>
+:ET

@@ -11,9 +11,22 @@ comments: false
 
 ---
 
+#### Zocdoc | New York, NY
+
+##### Provider Growth | Senior Software Engineer | March 2021 - Present
+
+  * Primarily focused on implementing full stack solutions to increase the number of providers and practices on Zocdoc
+
+  * Creating new features integrated with website submissions to create lead objects in Salesforce
+
+  * Designing different APIs in backend services to clean and post data to a main SQL database
+
+  * Refactoring old legacy architectures to facilitate a smooth user experience
+
+
 #### Microsoft | Seattle, WA
 
-##### Visual Studio Performance | Software Engineer | Nov. 2019 – Feb. 2021
+##### Visual Studio Performance | Software Engineer II | Nov. 2019 – March 2021
   
   *  Primarily focused on facilitating the developer experience on Microsoft Visual Studio
 
@@ -62,7 +75,7 @@ comments: false
   * C#, Java, C++, JavaScript, SQL, Ruby, Python, PowerShell scripting
 
 * Frameworks
-  * ASP.NET, .NET Core
+  * ASP.NET, .NET Core, React
 
 * Familiar with
   * GIT, JIRA, Bitbucket, GitHub, Android Studio, Oracle SQL Developer, Microsoft Azure and tools, Visual Studio, Visual Studio Code
