@@ -19,8 +19,10 @@ order: 5
   * Creating new features integrated with website submissions to create lead objects in Salesforce
 
   * Designing different APIs in backend services to clean and post data to a main SQL database
+  
+  * Lead the Self Signup project to allow providers to be activated quickly and without friction
 
-  * Refactoring old legacy architectures to facilitate a smooth user experience
+  * Designed and implemented the microservice that uses AWS Step Functions and Lambdas to post new lead information to Salesforce
 
 
 #### Microsoft | Seattle, WA
@@ -71,13 +73,13 @@ order: 5
 ---
 
 * Languages
-  * C#, Java, C++, JavaScript, SQL, Ruby, Python, PowerShell scripting
+  * C#, Typescript, Java, C++, JavaScript, SQL, Ruby, Python, PowerShell scripting
 
 * Frameworks
   * ASP.NET, .NET Core, React
 
 * Familiar with
-  * GIT, JIRA, Bitbucket, GitHub, Android Studio, Oracle SQL Developer, Microsoft Azure and tools, Visual Studio, Visual Studio Code
+  * GIT, JIRA, Bitbucket, GitHub, Android Studio, Oracle SQL Developer, Microsoft Azure and tools, Visual Studio, Visual Studio Code, Amazon Web Services
 
 --- 
 

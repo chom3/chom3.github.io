@@ -14,6 +14,7 @@ Hello! I'm a senior software engineer at Zocdoc, former software engineer at Mic
 * Reading - anything from fiction to self or professional development
 * Traveling - experiencing the day to day life in different cities 
 * Powerlifting - making sure my health doesn't take a backseat to my career
+* Music - trying to keep up with learning songs I enjoy on the piano
 
 ## Books I've Read/Am Reading
 * The Mythical Man Month - Fred Brooks
@@ -26,6 +27,8 @@ Hello! I'm a senior software engineer at Zocdoc, former software engineer at Mic
 * The Power of Habit - Charles Duhigg
 * Learned Optimism - Martin Seligman
 * How to Win Friends and Influence People - Dale Carnegie
+* Crucial Conversations - Joseph Grenny, Ron McMillan, Kerry Patterson, Laura Roppe
+* Get Off Your "But": How to End Self-Sabotage and Stand Up for Yourself - Sean Stephenson
 
 ---
 ### The theme of this personal website is called "Chirpy"!
